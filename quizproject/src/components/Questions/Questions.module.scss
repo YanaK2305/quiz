@@ -1,0 +1,58 @@
+.root {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .questions {
+    display: flex;
+    flex-direction: column;
+  }
+  .question {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color3);
+  }
+  .answers {
+    display: flex;
+    gap: 20px;
+  }
+  .answer {
+    border: 1px solid var(--color3);
+  }
+  .result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .btn {
+    font-size: 20px;
+    background-color: var(--color4);
+    color: white;
+    display: block;
+  }
+  .answerSelect {
+    background-color: var(--color3);
+  }
+  .answerWrong {
+    background-color: var(--color1);
+    color: white;
+  }
+  .answerCorrect {
+    background-color: var(--color2);
+    color: white;
+  }
+  .btn:disabled {
+    background-color: rgba(0, 0, 0, 0.193);
+    pointer-events: none;
+  }
+  .resultText {
+    margin-right: 20px;
+  }
+  .loading {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

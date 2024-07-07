@@ -1,0 +1,52 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .container {
+    background-color: var(--color3);
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+  }
+  .error {
+    color: var(--color1);
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    color: var(--color4);
+    font-size: 20px;
+  }
+  input,
+  select {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--color4);
+    font-size: 18px;
+  }
+  .inputError {
+    border: 2px solid var(--color1);
+  }
+  button {
+    width: 100%;
+    background-color: var(--color4);
+    color: white;
+    font-size: 20px;
+  }
+  .buttonError {
+    background-color: rgba(0, 0, 0, 0.121);
+    pointer-events: none;
+  }
+}
